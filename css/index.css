@@ -1,0 +1,181 @@
+
+/*CSS Reset and Css Variables*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  text-transform: capitalize;
+}
+:root{
+  --highlighter: #ff5a00;
+  --blue: #2997ff;
+  --red: #e30000;
+}
+
+/*》》》》》》》》》》》》》》》》》》》》》》》》
+  Hero and Header Section CSS
+《《《《《《《《《《《《《《《《《《《《《《《《《*/
+.headerAndHero{
+  width: 100vw;
+  height: 105vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.headerAndHero > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(8rem);
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.headerAndHero .header{/*Header*/
+  background: #000;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  grid-gap: 2rem;
+  width: 100%;
+}
+#logo{
+  fill: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+#logo:hover{
+  fill: #fff;
+}
+.header > .top{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header > .top > .icons{
+  width: 30%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+}
+.header .top .icons ion-icon{
+  font-size: 2rem;
+  color: #ffffff99;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header .top .icons ion-icon:hover{
+  color: #fff;
+}
+.header .bottom{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background: #000;
+}
+.header .bottom h1{
+  font-family: sf-medium;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header .bottom .btn{
+  background: #fff;
+  text-transform: capitalize;
+  border: none;
+  padding: .5rem 1.5rem;
+  border-radius: 10rem;
+  font-family: sf-regular;
+  cursor: pointer;
+}
+.hero{
+  margin-bottom: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: sf-regular;
+}
+.hero > img{
+  width: 20rem;
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: all 1s ease-in-out;
+}
+.hero h4{
+  font-size: 1.5rem;
+  color: #888;
+  letter-spacing: .1rem;
+  text-transform: capitalize;
+}
+
+/*》》》》》》》》》》》》》》》》》》》》》》》》
+  page1 Section CSS
+《《《《《《《《《《《《《《《《《《《《《《《《《*/
+.page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15rem;
+  gap: 8rem;
+}
+.page .vid-controls > video{
+  width: 100vw;
+}
+.page > h2{
+  padding: 0 3rem;
+  font-family: sf-bold;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+}
+.vid-controls{
+  position: relative;
+}
+.vid-controls > div{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  z-index: 5;
+  cursor: pointer;
+}
+.vid-controls > div ion-icon{
+  font-size: 2rem;
+  color: #fff;
+}
+.vid-controls > div ion-icon[name="play"]{
+  display: none;
+}
+.vid-controls .tl{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.2rem solid #fff;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  z-index: -1;
+}

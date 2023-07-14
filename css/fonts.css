@@ -1,0 +1,13 @@
+/*SF PRO DISPLAY is official font of apple*/
+@font-face{
+  src: url("../assets/fonts/sf-medium.OTF");
+  font-family: sf-medium;
+}
+@font-face {
+  src: url("../assets/fonts/sf-regular.OTF");
+  font-family: sf-regular;
+}
+@font-face {
+  src: url("../assets/fonts/sf-bold.OTF");
+  font-family: sf-bold;
+}

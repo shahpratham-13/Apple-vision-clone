@@ -1,0 +1,10 @@
+.button{
+  background: var(--highlighter);
+  color: #fff;
+  border: none;
+  padding: .7rem 2rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: sf-regular;
+  border-radius: 10rem;
+}
